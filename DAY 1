@@ -1,0 +1,91 @@
+Python Intepreter is basically a program that executes our python code. 
+
+Tools:
+Code Editor                                     ex: vscode, atom, sublime
+IDE - Integrated Development Environment        ex: pycharm
+IDE is a code editor with additional features like AutoCompletion, Debugging, Testing
+
+we are using vscode here, by installing a pluggin or extension vscode can be converted into a powerful IDE
+
+Many Built in Functions in python
+
+print 
+
+so for execution, vscode has an integrated terminal.
+
+open and close this terminal ctrl + ` (backtick)
+
+
+we are using vscode here, by installing a pluggin or extension vscode can be converted into a powerful IDE
+extension used python
+
+Linting code:
+shows the potential errors in the lines of code
+Problems panel lists all the issues in your code in one place
+shift+ctrl+M     View> Problems
+
+View > Command Palette -- can execute various commands in vscode -- all commands prefixed with python, since they all came after the installation of the python extension.
+default lint set in the python extension of vscode - pylint
+
+Formatting code:
+In python community, there are many documents called pep -- python enhancement proposals these are documents with instructions to be followed
+Formatting python code--there are tools, one popular one is AutoPep8
+
+In command palette >> execute Format Document
+Code> Preferences > Settings > TYPE formatOnSave
+
+To define shortcuts
+
+shift+ctrl+p
+Open Keyboard shortcuts
+Run python file -- double click on it -- ctrl+R (we defined it)
+
+Python
+Language + Particular Implementation
+Language is a specification that defines a set of rules and grammar for writing code.
+Implementation is a program that understands those rules and executes python code
+
+python.org is the default implentation of python called cpython -- its a program written in C
+there are several other implementations like 
+Jython -- written in java
+ironpython -- c# c sharp
+pypy -- subset of python
+
+so if we give python code to any of this impenetations, it should give the same result. But in practical its not the case
+
+reason behind multiple implementations (variety in os, browsers, programming languages ..)
+if say you are a java developer, and want to reuse or bring some of your java code into ur python program. Can use jython.
+
+
+How is python code executed?
+
+so languages like C is simple text based language understood by humans, for computers to understand it, it needs to be converted to Machine code. 
+compiler is a program that converts this c code to machine code. The machine code is specific to type of CPU of a computer.
+
+the machine code understood by windows wont be understood by mac
+
+But Java solved this program.
+a java compiler converts code into a portable language called java byte code instead of into machine code.
+this java byte code is not specific to a hardware platform like windows or mac
+
+then there is another program called jvm or java virtual machine that converts each instruction in byte code to machine code.
+
+there are jvm implementations for windows, mac etc
+
+windows jvm converts java byte code into machine code understood by windows machine
+
+when we run a python code with Cpython. first it will run our python code into python bytecode. bytecode passes to python virtual machine, that gets converted to machine code and gets executed.
+
+incase of jython. it take java code right, so it will convert python code to java bytecode and jvm inturn converts it into 
+machine code
+
+expression is a piece of code that produces a value
+syntax error is an error due to bad syntax or bad grammar in code.
+linter is a tool that checks the code for potential errors before running the code.
+
+
+
+
+
+
+
