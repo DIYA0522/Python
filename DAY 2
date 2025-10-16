@@ -1,0 +1,60 @@
+Fundamentals of Python
+
+variables used to store data in computer's memory.
+ex; student_count = 1000;
+intepreter will allocate a memory for this and store 1000.
+so this abel can be used anytime to access this memory location.
+
+types of data that can be stored.
+Built in primitive types
+Numbers
+Boolean
+Strings
+
+ex; student_count = 1000      --integrer
+ex; student_count = 10.34     --float
+ex; is_published = True       --boolean
+ex; course_name = "Python Programming"    --string
+
+python is a case sensitive language
+Accepted boolean values
+False
+True
+
+triple quotes used in order to define a big message 
+say
+Message = """
+This is an automate message
+Kindly Ignore !!!
+"""
+
+
+Function is a reusable piece of code used to carry out tasks
+Built in Functions in Python
+
+len funtion. used to get the length of ur string
+always followed by parenthesis to indicate its a function
+len() -- indicating we are calling this function
+
+some functions take additional data called arguments
+these arguments are inputs to this functions
+
+course = "Python Programming"
+print(len(course)) -- will print the number of characters in that string
+
+index of first haracter is 0
+
+print(len(course[0]))  ---1
+print(course[0])       ---P
+
+negavtive take from the end of the string
+print(course[-1])       ---g
+
+slice / extract 
+print(course[0:3])        --Pyt
+print(course[0:])          --gives exact same Python Programming
+print(course[:3])          --Pyt
+print(course[:])           --gives exact same Python Programming
+
+
+ 
