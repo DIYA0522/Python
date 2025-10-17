@@ -56,5 +56,40 @@ print(course[0:])          --gives exact same Python Programming
 print(course[:3])          --Pyt
 print(course[:])           --gives exact same Python Programming
 
+\    --escape character
+escape sequences in python
+\"  or \'  --escape sequence            to escape this double quote and move forward
+\\         escape sequence to print a backslash 
+\n    new line
+
+
+name1 = "diya \"philip"
+print(name)
+
+
+Formatted strings
+
+concatenated string
+first = "Diya"
+last = "Philip"
+full = first + " " + last\
+print(full)
+
+
+first = "Diya"
+last = "Philip"
+full = first + " " + last
+print(full)
+Yull = f"{first} {last}"
+print(Yull)
+kull = f"{len(first)} {2+2}"
+print(kull)
+
+In formatted strings, you can put valid expression between the curly braces
+len function is general purpose so its not limited to strings.
+
+There are certain functions that are specific to some strings
+
+
 
  
