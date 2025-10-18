@@ -88,7 +88,120 @@ print(kull)
 In formatted strings, you can put valid expression between the curly braces
 len function is general purpose so its not limited to strings.
 
-There are certain functions that are specific to some strings
+There are certain functions that are specific to some strings 
+
+String Methods
+
+course = "Python Programming"
+course. 
+after . many available functions will prompt, in precise terms we refer to this functions as methods
+
+everything in python we call it as objects and objects have functions we call methods, methods we can access using . notation.
+ex: we have upper to change string to upper case
+msg = "hello"
+print(msg.upper())
+HELLO
+
+original string not affected
+
+print(course.upper())          --all caps
+print(course.lower())          --all smalls
+print(course.title())          --first letter caps
+print(course.strip())          --removes any blank spaces at the begin or end of string
+  --also can use as lstrip or rstrip
+
+
+print(course.find("pro"))     ---finds the index of pro
+
+when the given string is not found using find  --   -1 will come
+
+print(course.replace("p","j"))           --replaces all p with j 
+print("Pro" in course)                   --Using in operator returns whether Pro exists in the string or not as boolean value
+print("pro" not in course)               --not exists
+
+
+Numbers 
+3 main types
+integer
+float
+complex numbers       # a+bi             where i is the imaginary number
+1+2i
+
+standard arithemetic operators
++, -, *
+print(10 / 3)                 --gives float value               
+print(10 // 3)                --gives integer value of quotient
+print(10 % 3)                 --Modulus operation --gives remainder
+print(10 ** 3)                --LEFT TO THE POWER OF RIGHT
+for all these operators there is a special operator called autgemented assignment operator
+ex: x += 3
+
+Some useful functions in python
+
+print(round(2.7))
+print(abs(-3.3))
+
+
+need to import math module , which has many functions available that it supports
+
+import math
+print(math.ceil(2.3))
+
+
+search python 3 math module in browser
+to find all the math module functions available
+
+
+open terminal using ctrl+\
+
+for two characters to be concatenated both need to be of the same type
+Type conversion - 
+built in function used for it
+
+
+x = input("x: ")                      --asking input from user
+👉 This line asks the user to enter a value.
+The input() function always gives the value as a string, even if you type a number.
+print(type(x))
+
+x: will appear as a prompt in the terminal
+y = int(x) + 1
+👉 This line does two things:
+int(x) converts the user’s input (which is a string) into an integer.
+
+Example: if x was "5", then int(x) becomes 5.
+It then adds 1 to that number and stores the result in y.
+So y becomes 6.
+
+print(f"x: {x}, y: {y}")
+👉 This line prints both values in a nice formatted way.
+The f before the string lets you include variables directly inside { }.
+
+Example output if user entered 5:
+x: 5, y: 6
+
+Falsy and Truthy values in python
+#Falsy values
+0
+""
+None
+
+whenever we use these values in a boolean context, we get false
+
+BUILT IN PRIMITIVE TYPES IN PYTHON
+
+STRING
+NUMBERS
+BOOLEAN
+
+
+
+
+
+
+
+
+
 
 
 
