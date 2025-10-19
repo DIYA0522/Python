@@ -136,3 +136,75 @@ Primitive type like Number, string, boolean
 Complex type like range
 
 Range object is iterable
+ for x in range(5):
+  print(x)
+0
+1
+2
+3
+4
+
+Not just range there are many objects that are iterable like
+string
+
+for x in "Python":
+ print(x)
+P
+y
+t
+h
+o
+n
+
+List is iterable
+for x in [1,2,3]:
+ print(x)
+1
+2
+3
+
+Iterating a custom object
+
+shopping_cart = ["Veggies", "Milk", "Curd"]
+for item in shopping_cart:
+    print(item)
+
+Veggies
+Milk
+Curd
+
+While Loop
+
+command = ""
+while command.lower() != "quit":                       ---IN THIS CASE everytime string gets converted to lower before comparing
+    command = input(">")
+    print("ECHO", command)
+
+--until input given as quit
+terminal will keep on displaying > asking input
+Once quit goes out
+
+Infinite Loops
+
+Loop that runs forever --- loop that keeps running forever until a break condition stops it.
+
+while True:                      --This creates an infinite loop, because True is always true.
+    command = input(">")
+    print("ECHO", command)
+    if command.lower() == "quit":
+        break
+
+Q. Display only even numbers in range 1 to 10.
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        count += 1
+        print(number)
+print(f"We have {count} even numbers")
+
+
+
+
+
+
+
