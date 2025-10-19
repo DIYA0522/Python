@@ -1,0 +1,138 @@
+Fundamentals of Programming
+
+Comparison operators
+used with operands give Boolean values
+
+10 > 3
+True
+
+10 == "10"
+these two are stored diff in our memory
+False
+
+Every letter has a numerical representation, which decides when strring are givem, which is bigger.
+you can check using 
+ord("b")
+
+# print(ord("b"))              98
+print("bag" > "apple")       true
+print("bag" == "Bag")        false
+
+
+Conditional Operators
+temp = 35
+if temp > 30:
+   identation(blank spaces) will indicate what case needs to be executed in this case.
+
+
+temp = 15
+if temp > 30:
+    print("Its warm")
+    print("Drink water")
+elif temp > 20:
+    print("its nice")
+else:
+    print("Its cold")
+print("Done")
+
+age = 22
+if age >= 18:
+    print("eligible")
+else:
+    print("not eligible")
+print("done")
+
+For cleaner code
+
+age = 22
+message = "Eligible" if age >= 18 else "Not Eligible"
+print(message)
+
+Here we are assigning it to a variable message, This is called ternary message
+
+Logical Operator
+AND         --both True result is true
+OR
+NOT
+
+high_income = False
+good_credit = True
+student = False
+if good_credit or high_income:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+Short Circuit Evaluation is when evaluation stops as soon as one throws False / True.
+Logical Operators are short circuit
+
+Chaining Comparison Operators
+
+Age should be between 18 and 65
+
+age = 22
+if age >= 18 and age < 65:        
+print("Eligible")
+
+You can also write
+age = 22
+if 18<=age<65:
+print("Eligible")
+
+This is what we call chaining comparison operator
+
+Loops
+For loop
+
+for number in range(5):
+    print("Attempt", number)
+
+for number in range(1, 5):
+    print("Attempt", number + 1, (number + 1) * ".")
+print("\n")
+range(1, 5) → gives numbers 1, 2, 3, 4 (the end value 5 is not included).
+
+for number in range(1, 10, 2):
+    print("Attempt", number + 1, (number + 1) * ".")
+
+first two arguments in range shows the start and end index or number
+the third argument 2 means “step size,” so it skips every second number
+if not given step size is 1 by default.
+
+For..else
+
+success = True
+for number in range(3):
+    print("Attempt")
+    if success:
+        print("Succesfull")
+        break
+else:
+    print("Attempted 3 times but failed..")
+
+
+Nested Loop
+
+for x in range(3):
+    for y in range(2):
+        print(f"({x},{y})")
+
+(0,0)
+(0,1)
+(1,0)
+(1,1)
+(2,0)
+(2,1)
+
+Iterables
+
+print(type(5))                 --5 is object (or value) of their respective class # <class 'int'>       
+print(type(range(5)))          --range function returns an object of type range
+--range is A class that Creates a range object
+--So yes, they behave like functions because you “call” them with parentheses —
+but what they really do is create (or construct) an object of that type.
+
+Primitive type like Number, string, boolean
+Complex type like range
+
+Range object is iterable
