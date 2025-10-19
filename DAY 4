@@ -1,0 +1,79 @@
+Functions
+
+We have many functions like print(), round(), range(), etc
+Likewise how can we create our own functions
+Name in lower case
+separate by _
+
+
+Defining Functions
+
+def greet():
+   print("Hello All")
+   print("Welcome")
+
+greet()
+
+Arguments
+Values inside Parenthesis is Arguments
+Parameter is the input we give inside that ()
+Argument is the actual value
+
+say;
+greet(first_name, last_name)
+greet("john","matt")
+say Parameter is firt_name
+Argument is john
+
+def greet(first_name, last_name):
+    print(f"Hi, {first_name} {last_name}")
+    print("Welcome Abroad")
+
+
+greet("John", "Abraham")   
+
+There are two types of functions:
+1. Perform a task
+2. Return a value
+
+1.
+def greet(name):
+    print(f"Hi {name}")
+
+
+greet("diya")
+
+
+2.
+def get_greeting(name):
+    return f"Hi {name}"
+
+
+message = get_greeting("dia")        --storing returned vaue in an obj called message
+print(message)                       --can either print
+file = open("content.txt", "w")      
+file.write(message)
+           ---Opens (or creates) a file named content.txt in write mode ("w")
+              Writes "Hi dia" into it.
+              (Optional best practice) You should close the file after writing:
+              file.close()
+✅ Or better yet, use the safer version:
+    with open("content.txt", "w") as file:
+    file.write(message)
+
+What if we put greet function inside a print function
+
+print(greet("Home"))
+ it returns None
+None is the return value of greet function\
+None is the object that represents the absence of a value
+Unless u specifically return a value, all functions return None by Default
+
+
+Now return given
+def greet(name):
+    print(f"Hi {name}")
+    return ("...")
+
+
+print(greet("diya"))
