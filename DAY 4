@@ -77,3 +77,82 @@ def greet(name):
 
 
 print(greet("diya"))
+
+
+Keyword Arguments
+
+def increment(number, by):
+    return number + by
+
+
+print(increment(2, 1))
+
+
+We can make this code more readable by setting a keyword argument
+
+def increment(number, by):
+    return number + by
+
+
+print(increment(2, by=1))
+
+Here by=1 is a Keyword Argument
+
+It makes your code easier to read and understand — especially when there are many parameters.
+Both lines do the same thing, but the second one is more explicit and readable.
+In way1 order matters, value assumed based on order of arguments,
+way2 its more readable by giving a keyword argument
+
+
+Usually whenever a function is defined with parameters, its always required.
+How to make it optional?
+
+ex:
+
+def increment(number, by=1):
+    return number + by
+
+
+print(increment(2, 2))
+
+here parameter value is given while defining itself, so even if value not given in input, it will take that given value.
+If value given along parameter, but again provided in input, the one in input is considered.
+
+also to make any paramter optional, always place it after the reqd parameter while defining.
+ex:
+
+def increment(number, another, by=1):
+    return number + by + another
+
+
+print(increment(2, 2))
+----------------------------------------------
+*args
+
+
+[] USED for Lists
+() USED for tuples
+
+
+def multiple(x, y):
+    return x*y
+
+
+print(multiple(2, 3))
+---6
+
+# What if many numbers need to be given
+
+def multiple(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number            1*2 =2
+    return total                   2*3 = 6
+                                   6*4 = 24
+                                   24*5 = 120
+print(multiple(2, 3, 4, 5))
+
+---120
+
+
+
