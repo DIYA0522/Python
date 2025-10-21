@@ -1,0 +1,48 @@
+Weight converter program
+
+weight = int(input('Weight:'))                                           here int() convert return value of input() fn to numerical
+unit = input('(L)bs or (K)g:')
+if unit.upper() == 'L':
+    converted = weight * 0.45                                            so we cannot multiple a string(weight) with a floating-point value(0.45), so weight is converted to a numerical value first
+    print(f'You are {converted} kilos')                                   formatted string f"{}"
+else:
+    converted = weight / 0.45
+    print(f'You are {converted} pounds')
+
+
+
+------------------------------------------------------------
+
+while condition:
+     ...........
+     ...........
+
+In this case whatever code we write inside this block will continuously execute until condition is True
+
+i = 1                        i initialised to 1
+while i<=5:                  python interpreter interprets line 2        
+  print(i)                   prints i
+  i=i+1                      increments i,         until i<=5 bloack executes, then gets out
+print("Done")
+
+---------------------------------------------------------------
+
+Simple Guessing game using while loop
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess:"))
+    guess_count += 1
+    if (guess == secret_number):
+        print('You won!')
+        break
+else:
+    print("You failed 3 guesses")
+
+
+Like if can have an optional else, while can also have an else block.
+Here after while block gets completed(after 3 guess done) else loop gets executed.
+Before that if user gives correct input, gets out of if statement by break condition.
+
