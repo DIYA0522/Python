@@ -46,3 +46,17 @@ Like if can have an optional else, while can also have an else block.
 Here after while block gets completed(after 3 guess done) else loop gets executed.
 Before that if user gives correct input, gets out of if statement by break condition.
 
+----------------------------------------------------------------------------------------
+Emoji Converter
+
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)": "😊",
+    ":(": "☹️"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
+
