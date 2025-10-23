@@ -1,0 +1,62 @@
+Input function
+
+name = input("What is your name? ")
+color = input("What's your favourite color? ")
+print(name + " likes " + color)
+-------------------------------------------------
+Calculate Age from Birth year
+
+birth_yr = int(input('Birth year: '))              ---input fn always takes input as string, so using int() its converted to integer
+print(type(birth_yr))
+age = 2025 - birth_yr
+print(age)
+print(type(age))
+--------------------------------------------------
+Converting weight to pounds
+
+weight = int(input("Whats you weight(in kg): "))
+converted_weight = weight * 2.2
+print(f"Your weight in pounds: {converted_weight} lbs")
+----------------------
+Converting weight to pounds and vise versa
+
+weight = int(input("Whats you weight: "))
+unit = input('lbs or kg: ')
+if unit.lower() == 'l':
+    converted_weight = weight * 0.45
+    print(f"Your weight: {converted_weight} kg")
+else:
+    converted_weight = weight / 0.45
+    print(f"Your weight: {converted_weight} lbs")
+print('Done')
+------------------------------
+Strings
+
+course = "Python for Beginners"
+print(course[-11:-1])
+print(course[:9])
+----------------------------------
+
+MATH is a module in python containing many useful mathematical functions,
+
+import math
+print(round(2.34567))
+
+print(math.ceil(2.9))
+
+----------------------------------------
+
+Price of a house is $1M
+If buyer has good credit
+They need to put down 10%
+otherwise
+They need to put down 20%
+
+price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+ downpayment = 0.1 * price
+else:
+ downpayment = 0.2 * price
+print(f"The downpayment is ${downpayment}")
